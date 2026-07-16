@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeoTech | Building Modern Websites</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <nav>
+        <h2>🚀 LeoTech</h2>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h1>Turns ideas into powerful websites</h1>
+        <p>
+            Leotech builds fast, modern, and responsive websites
+          that help
+            businesses grow, attract more customers, and stand out online.
+        </p>
+
+        <a href="#contact" class="btn">Hire Me</a>
+        <a href="#portfolio" class="btn-secondary">View Portfolio</a>
+    </section>
+
+<section class="hero">
+        <h1>Modern Websites.<br>
+Built for Growth.</h1>
+        <p>
+From business websites to custom web applications, LeoTech builds fast, responsive, and modern digital experiences that help businesses earn trust and grow online.
+
+<section id="about">
+    <h2>About LeoTech</h2>
+    <p>
+        LeoTech is a web development brand focused on building modern,
+        responsive, and high-performance websites for businesses,
+        startups, and entrepreneurs.
+    </p>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+
+    <div class="services">
+
+        <div class="card">
+            <h3>🌐 Business Websites</h3>
+            <p>Professional websites designed to showcase your business and attract more customers.</p>
+        </div>
+
+        <div class="card">
+            <h3>🛒 E-commerce Websites</h3>
+            <p>Sell your products online with secure, modern, and user-friendly online stores.</p>
+        </div>
+
+        <div class="card">
+            <h3>⚡ Web Applications</h3>
+            <p>Custom web applications built to simplify your business processes.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="why">
+    <h2>Why Choose LeoTech?</h2>
+
+    <div class="services">
+
+        <div class="card">
+            <h3>⚡ Lightning Fast</h3>
+            <p>Websites optimized for speed, performance, and a smooth user experience.</p>
+        </div>
+
+        <div class="card">
+            <h3>📱 Mobile First</h3>
+            <p>Every website looks great and works perfectly on phones, tablets, and desktops.</p>
+        </div>
+
+        <div class="card">
+            <h3>🔒 Secure & Reliable</h3>
+            <p>Built with modern development practices to keep your website stable and secure.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="process">
+    <h2>Our Process</h2>
+
+    <div class="services">
+
+        <div class="card">
+            <h3>1️⃣ Discovery</h3>
+            <p>We understand your business, goals, and the audience you want to reach.</p>
+        </div>
+
+        <div class="card">
+            <h3>2️⃣ Design & Development</h3>
+            <p>We create a modern, responsive website tailored to your brand and business needs.</p>
+        </div>
+
+        <div class="card">
+            <h3>3️⃣ Launch & Support</h3>
+            <p>Your website goes live with continued support to keep it running smoothly.</p>
+        </div>
+
+    </div>
+</section>
+    <section id="portfolio">
+    <h2>Featured Projects</h2>
+
+    <div class="services">
+
+        <div class="card">
+            <h3>🍽️ Restaurant Website</h3>
+            <p>A modern, mobile-friendly website designed for restaurants with online reservations.</p>
+        </div>
+
+        <div class="card">
+            <h3>🏫 School Website</h3>
+            <p>A clean and responsive school website featuring admissions, news, and event updates.</p>
+        </div>
+
+        <div class="card">
+            <h3>🛍️ Online Store</h3>
+            <p>An elegant e-commerce website built for businesses to showcase and sell products online.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Let's Build Something Amazing</h2>
+
+    {% if success %}
+        <p style="color:#38bdf8;">
+            ✅ Your message has been received. We'll get back to you soon.
+        </p>
+    {% endif %}
+
+    <form method="POST">
+
+        <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required>
+
+        <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required>
+
+        <textarea
+            name="message"
+            rows="6"
+            placeholder="Tell us about your project..."
+            required></textarea>
+
+        <button class="btn" type="submit">
+            Send Message
+        </button>
+
+    </form>
+
+</section>
+
+<footer>
+    <h3>🚀 LeoTech</h3>
+
+    <p>
+        Building modern websites that help businesses grow.
+    </p>
+
+    <p>© 2026 LeoTech. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
